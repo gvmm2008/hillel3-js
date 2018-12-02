@@ -1,0 +1,161 @@
+.body {
+  margin: 0;
+}
+
+header {
+  border-bottom: 1px solid #000000;
+}
+
+.clear {
+  clear: both;
+}
+
+.header-date {
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.header-menu {
+  float: left;
+  text-align: left;
+  height: 70px;
+  line-height: 70px;
+}
+.header-menu #toggle {
+  display: none;
+}
+.header-menu_label {
+  margin: 0 0 0 40px;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+}
+.header-menu_links {
+  text-align: left;
+  margin: 0 30px;
+  position: relative;
+  z-index: 5;
+}
+.header-menu_links_item {
+  text-decoration: none;
+  color: gray;
+  margin: 0 10px;
+  line-height: 70px;
+  background-color: #fff;
+}
+.header-menu_links_item:hover {
+  color: #e20d0d;
+}
+.header-menu_links_item--active {
+  color: #e20d0d;
+}
+
+.page {
+  padding: 0;
+  z-index: 0;
+  position: relative;
+}
+.page_side-bar {
+  padding-left: 250px;
+}
+
+.content {
+  margin: 0;
+  padding: 0 120px;
+  position: relative;
+}
+
+.side-bar {
+  width: 249px;
+  background-color: #e4cccc;
+  border-right: 1px solid #000000;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  bottom: 0;
+}
+.side-bar_toggle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  font-size: 26px;
+}
+.side-bar_inner {
+  height: 100%;
+  overflow: auto;
+}
+.side-bar_inner_content {
+  min-height: 100%;
+  padding-top: 30px;
+  border-top: 1px solid #000;
+}
+.side-bar_inner_links {
+  text-align: left;
+  margin: 0 30px;
+}
+.side-bar_inner_links_item {
+  text-decoration: none;
+  color: gray;
+  margin: 0 10px;
+  line-height: 35px;
+  display: block;
+}
+.side-bar_inner_links_item:hover {
+  color: #e20d0d;
+}
+.side-bar_inner_links_item--active {
+  color: #e20d0d;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  border-top: 1px solid #000;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 767px) {
+  .header-menu_label {
+    display: block;
+    cursor: pointer;
+  }
+  .header-menu_links {
+    text-align: center;
+    width: 100%;
+    display: none;
+    margin-left: 0;
+  }
+  .header-menu_links_item {
+    display: block;
+    border-bottom: 1px solid #000000;
+    margin: 0;
+  }
+
+  #toggle:checked + .header-menu_links {
+    display: block;
+  }
+
+  .page_side-bar {
+    padding-left: 0;
+  }
+
+  .side-bar {
+    display: none;
+  }
+  .side-bar_toggle {
+    display: none;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .content {
+    padding: 0 20px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

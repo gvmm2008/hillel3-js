@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vladimir</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body class="body">
+    <header>
+        <div class="header-menu">
+            <label class="header-menu_label" for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            
+            <div class="header-menu_links">
+                <a class="header-menu_links_item header-menu_links_item--active" href="#">Link1</a>
+                <a class="header-menu_links_item" href="#">Link2</a>
+                <a class="header-menu_links_item" href="#">Link3</a>
+                <a class="header-menu_links_item" href="#">Link4</a>
+                <a class="header-menu_links_item" href="#">Link5</a>
+            </div>
+        </div>
+        <div class="header-date">
+            <span id="hours_id"></span>:<span id="minutes_id"></span>:<span id="seconds_id"></span>
+        </div>
+        <div class="clear"></div>
+    </header>
+    <div class="page page_side-bar">
+        <article class="content">
+            <div class="side-bar_toggle" id="sideBarToggleButton">&#9776;</div>
+            <h3>Введение в JavaScript</h3>
+            <p>JavaScript изначально создавался для того, чтобы сделать web-странички «живыми». Программы на этом языке называются скриптами. В браузере они подключаются напрямую к HTML и, как только загружается страничка – тут же выполняются.</p>
+        </article>
+        <aside class="side-bar">
+            <div class="side-bar_inner">
+                <div class="side-bar_inner_content">
+                    <div class="side-bar_inner_links">
+                        <a class="side-bar_inner_links_item side-bar_inner_links_item--active" href="index.html">Main</a>
+                        <a class="side-bar_inner_links_item" href="table.html">Table</a>
+                        <a class="side-bar_inner_links_item" href="#">Link3</a>
+                        <a class="side-bar_inner_links_item" href="#">Link4</a>
+                        <a class="side-bar_inner_links_item" href="#">Link5</a>
+                    </div>
+                </div>               
+            </div>
+        </aside>
+    </div>
+    <footer class="footer">
+        &copy; 2018 Vladimir
+    </footer> 
+    <script src="main.js"></script>
+</body>
+</html>
